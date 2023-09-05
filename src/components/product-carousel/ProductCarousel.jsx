@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 import './ProductCarousel.scss';
 import { Navigation, Autoplay } from 'swiper/modules';
 import ProductCard from '../product-card/ProductCard';
-
+import { Link } from 'react-router-dom';
 
 const ProductCarousel = ({categoryData}) => {
   return (
@@ -41,9 +41,9 @@ const ProductCarousel = ({categoryData}) => {
         className="mySwiper"
       >
         {
-          categoryData.allRefinedProducts.map(product => 
+          categoryData.allRefinedProducts.map(product =>
             <SwiperSlide key={product._id}>
-             <ProductCard productData={product} />
+                <ProductCard productData={product} />
             </SwiperSlide>
           )
         }

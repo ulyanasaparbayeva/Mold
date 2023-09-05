@@ -1,14 +1,30 @@
 .product-card{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; // This line makes sure the items are distributed across the container
-  align-items: center;
-  height: 100%;
   padding: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   box-sizing: border-box;
   width: 100%;
+  .product-card__categories {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    span {
+      font-size: 12px;
+      padding: 3px;
+      background-color: #d8d7d7;
+      color: #5f5e5e;
+    }
+  }
+
+  .product-card__price {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+
   img{
     max-height: 230px;
     width: 100%;
